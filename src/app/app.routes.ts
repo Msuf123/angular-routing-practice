@@ -5,6 +5,6 @@ import { AboutComponent } from './about/about.component';
 export const routes: Routes = [{
     path:'',component:HomepageComponent
 },{
-    path:'about',component:AboutComponent
+    path:'about/:id/:name',component:AboutComponent
 }
 ];
