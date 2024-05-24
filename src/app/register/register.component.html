@@ -1,0 +1,7 @@
+<form style="display: flex; flex-direction: column; align-items:center;" [formGroup]="formGroup" (ngSubmit)="formSubmitted()">
+    <label>Enter username</label>
+    <input formControlName="name">
+    <label>Enter password</label>
+    <input formControlName="password">
+    <button>Submit</button>
+</form>
