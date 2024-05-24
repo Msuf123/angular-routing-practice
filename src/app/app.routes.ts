@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { ChildOneComponent } from './about/child-one/child-one.component';
 import { ChildTwoComponent } from './about/child-two/child-two.component';
+import { ThirdComponentComponent } from './third-component/third-component.component';
 const resolv=()=>Promise.resolve('okkkk')
 
 export const routes: Routes = [{
@@ -12,7 +13,7 @@ export const routes: Routes = [{
     path:'about',title:'about|sec',component:AboutComponent,children:[
         {path:'one',component:ChildOneComponent,title:resolv}
         ,{path:'two',component:ChildTwoComponent}
-        ,
+        ,{path:'one/:id',component:ThirdComponentComponent}
     ]
 },
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Route, Router, RouterOutlet } from '@angular/router';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +12,5 @@ import { ActivatedRoute, Route, Router, RouterOutlet } from '@angular/router';
 export class AboutComponent {
   constructor( private router:ActivatedRoute){}
  
-  ngOnInit(){
-    console.log(this.router.snapshot)
-   }
+  
 }
