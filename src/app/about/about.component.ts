@@ -12,6 +12,7 @@ import { switchMap } from 'rxjs';
 export class AboutComponent {
   constructor( private router:ActivatedRoute,private nave:Router){}
   nav(){
+    
     this.nave.navigate(['about','one','jac','spear'],{queryParams:{id:'aksjat'}})
   }
   
