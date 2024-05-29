@@ -8,6 +8,7 @@ import { ThirdComponentComponent } from './third-component/third-component.compo
 import { canActiveGuard } from './can-active.guard';
 import { deactivateGuard } from './guard/deactivate.guard';
 import { RegisterComponent } from './register/register.component';
+import { ProfileComponentComponent } from './profile-component/profile-component.component';
 const resolv=()=>Promise.resolve('okkkk')
 
 export const routes: Routes = [{
@@ -20,6 +21,8 @@ export const routes: Routes = [{
     ]
 }
 ,{path:'register',component:RegisterComponent,canDeactivate:[deactivateGuard]}
+,{component:ProfileComponentComponent}
+
 ,{path:'**',component:ErrorComponent}
 
 ];
