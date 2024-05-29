@@ -21,7 +21,7 @@ export const routes: Routes = [{
     ]
 }
 ,{path:'register',component:RegisterComponent,canDeactivate:[deactivateGuard]}
-,{component:ProfileComponentComponent}
+,{matcher:()=>,component:ProfileComponentComponent}
 
 ,{path:'**',component:ErrorComponent}
 
