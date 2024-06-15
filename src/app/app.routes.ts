@@ -21,13 +21,7 @@ export const routes: Routes = [{
     ]
 }
 ,{path:'register',component:RegisterComponent,canDeactivate:[deactivateGuard]}
- ,{matcher:(url)=>{
-    if (url.length === 1 && url[0].path.match(/^@[\w]+$/gm)) {
-        return {consumed: url, posParams: {username: new UrlSegment(url[0].path.slice(1), {})}};
-      }
-      return null
-
- },component:ProfileComponentComponent}
+ 
 
 ,{path:'**',component:ErrorComponent}
 
