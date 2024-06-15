@@ -12,7 +12,5 @@ export class AppComponent {
   title = 'routing';
   constructor( private router:Router){}
   
- ngOnInit(){
-  
- }
+ 
 }
