@@ -11,6 +11,4 @@ import { ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterOutlet } fr
 export class AppComponent {
   title = 'routing';
   constructor( private router:Router){}
-  
- 
 }
